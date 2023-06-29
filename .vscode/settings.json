@@ -1,0 +1,20 @@
+{
+    "editor.accessibilitySupport": "auto",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "diffEditor.diffAlgorithm": "advanced",
+    "diffEditor.experimental.collapseUnchangedRegions": true,
+    "diffEditor.experimental.useVersion2": true,
+    "window.autoDetectColorScheme": false,
+    "window.commandCenter": true,
+    "search.actionsPosition": "auto",
+    "search.searchEditor.reusePriorSearchConfiguration": true,
+    "search.seedOnFocus": true,
+    "search.showLineNumbers": true,
+    "scm.alwaysShowActions": false,
+    "scm.alwaysShowRepositories": false,
+    "editor.renderWhitespace": "none",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on"
+}
