@@ -4,23 +4,23 @@ CREATE TABLE genres (genre_Id int(10) PRIMARY KEY, genre_name varchar(20));
 CREATE TABLE movie_genres (movie_Id int(10) PRIMARY KEY, genre_Id int(10));
 
 -- insert
-INSERT INTO Movies VALUES (0001, "RRR", '2022', 1001);
-INSERT INTO Movies VALUES (0002, "Avatar", '2023', 1002);
-INSERT INTO Movies VALUES (0003, "2018", '2023', 1003);
-INSERT INTO Movies VALUES (0004, "good night", '2023', 1004);
+INSERT INTO Movies VALUES (0001, "Sarkar Vaari Paata", '2022', 01);
+INSERT INTO Movies VALUES (0002, "Avatar2", '2023', 02);
+INSERT INTO Movies VALUES (0003, "2018", '2023', 03);
+INSERT INTO Movies VALUES (0004, "Bhoo", '2023', 04);
 
-INSERT INTO directors VALUES (1001, "Rajamouli");
-INSERT INTO directors VALUES (1002, "James Cameron");
-INSERT INTO directors VALUES (1003, "Joseph");
-INSERT INTO directors VALUES (1005, "Mani sharma");
+INSERT INTO directors VALUES (01, "Parasuram");
+INSERT INTO directors VALUES (02, "James Cameron");
+INSERT INTO directors VALUES (03, "Joseph");
+INSERT INTO directors VALUES (05, "Sri Kishore");
 
-INSERT INTO genres VALUES (19991, "drama");
-INSERT INTO genres VALUES (19992, "Action");
-INSERT INTO genres VALUES (19993, "Survival triller");
+INSERT INTO genres VALUES (1, "drama and comedy");
+INSERT INTO genres VALUES (2, "Action");
+INSERT INTO genres VALUES (3, "Survival triller");
 
-INSERT INTO movie_genres VALUES (0001, 19991);
-INSERT INTO movie_genres VALUES (0002, 19992);
-INSERT INTO movie_genres VALUES (0003, 19993);
+INSERT INTO movie_genres VALUES (0001, 1);
+INSERT INTO movie_genres VALUES (0002, 2);
+INSERT INTO movie_genres VALUES (0003, 3);
 
 -- query 1
 select m.title, d.director_name from Movies m, directors d where m.director_Id = d.director_Id;
