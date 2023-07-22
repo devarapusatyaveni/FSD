@@ -1,3 +1,8 @@
+CREATE TABLE Movies(movieId int(10) PRIMARY KEY, title varchar(20), release_year varchar(20), director_Id int(10));
+CREATE TABLE directors (director_Id int(10) PRIMARY KEY, director_name varchar(20));
+CREATE TABLE genres (genre_Id int(10) PRIMARY KEY, genre_name varchar(20));
+CREATE TABLE movie_genres (movie_Id int(10) PRIMARY KEY, genre_Id int(10));
+
 -- insert
 INSERT INTO Movies VALUES (0001, "RRR", '2022', 1001);
 INSERT INTO Movies VALUES (0002, "Avatar", '2023', 1002);
